@@ -1,0 +1,37 @@
+# Core Deep Learning Framework
+torch==2.5.1
+torchvision==0.20.1
+torchaudio==2.5.1
+
+# Scientific Computing and ML Libraries
+numpy==2.2.5
+pandas==2.2.3
+scipy==1.15.2
+scikit-learn==1.6.1
+
+# Data Processing and Visualization
+matplotlib==3.10.1
+Pillow==11.2.1
+opencv-python==4.11.0.86
+
+# Configuration and Utilities
+PyYAML==6.0.2
+
+# Network and Communication
+requests==2.32.3
+
+# Visualization and Monitoring
+visdom==0.2.4
+wandb==0.19.11
+
+# Data Processing
+tqdm==4.67.1
+joblib==1.5.0
+
+# Protocol Buffers
+protobuf==5.29.3
+
+# Other Utilities
+certifi==2025.4.26
+setuptools==80.1.0
+wheel==0.45.1
