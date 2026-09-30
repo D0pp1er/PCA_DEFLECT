@@ -16,11 +16,42 @@ python3 main_runner.py --attack badnet --defense pca-deflect --dataset mnist > b
 
 This will save all printed output and error messages to `badnet_pca_mnist_output.txt`.
 
+## Reproducing Experiments
+
+For detailed guidance on reproducing experimental results, including:
+- Recommended DBSCAN epsilon values for different attacks
+- Attack-specific configurations and defense compatibility
+- Complete command examples for all supported attacks and defenses
+- Defense parameter configurations
+
+**See [Experiment.md](Experiment.md)** for comprehensive experimental setup and reproduction procedures.
+
+### Quick Reference
+
+**Supported Attacks:**
+- Data Poisoning: BadNet, DBA, EdgeCase
+- Model Poisoning: CerP, ConstrainScale
+
+**Available Defenses:**
+- `pca-deflect`: PCA-Deflect defense (recommended for all attacks)
+- `nab`: Neural Attention-based Backdoor defense
+- `npd`: Neural Polarizer Defense
+- `mean`: Baseline federated averaging (no defense)
+
+**Supported Datasets:**
+- `mnist`: MNIST handwritten digits
+- `fmnist`: Fashion-MNIST clothing items
+- `emnist`: Extended MNIST letters and digits
+- `cifar`: CIFAR-10 natural images
+
+For attack-specific command examples and optimal parameter configurations, refer to [Experiment.md](Experiment.md).
+
 ## Project Structure
 
 ```
 .
 ├── README.md
+├── Experiment.md
 ├── config.py
 ├── main_runner.py
 ├── attacks
@@ -57,3 +88,4 @@ This will save all printed output and error messages to `badnet_pca_mnist_output
 - **data/**: Contains datasets (MNIST in this case)
 - **main_runner.py**: Main entry point for running attacks and defenses
 - **config.py**: Configuration settings
+- **Experiment.md**: Detailed experimental configuration and reproduction guide
